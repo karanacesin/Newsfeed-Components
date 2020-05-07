@@ -116,6 +116,7 @@ const articles = document.querySelector('.articles');
 
 function content (attr){
   const {title, date, firstParagraph, secondParagraph,thirdParagraph} = attr;
+  
   const ctop = document.createElement('div');
   const ctitle = document.createElement('h2');
   const cdate = document.createElement('p');
@@ -153,6 +154,6 @@ function content (attr){
 }
 
 data.forEach(item => {
-  const items = content(item)
-  articles.appendChild(items)
+  const line = content(item);
+  articles.appendChild(line);
 })
