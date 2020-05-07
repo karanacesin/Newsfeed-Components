@@ -33,3 +33,31 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+const menu = document.querySelector('.menu-button');
+
+function list (attr){
+  const {menuItems} = attr;
+
+  const top = document.createElement('div');
+  const mitems = document.createElement('ul');
+  const students = document.createElement('li');
+  const faculty = document.createElement('li');
+  const wnew = document.createElement('li');
+  const trend = document.createElement('li');
+  const music = document.createElement('li');
+  const logout = document.createElement('li');
+
+
+top.appendChild(mitems);
+mitems.appendChild(students);
+mitems.appendChild(faculty);
+mitems.appendChild(wnew);
+mitems.appendChild(trend);
+mitems.appendChild(music);
+mitems.appendChild(logout);
+
+top.classList.add('menu');
+
+
+}
